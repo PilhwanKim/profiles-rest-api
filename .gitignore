@@ -1,6 +1,7 @@
 # Dev tools
 .idea/
 .vagrant/
+.vscode/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
