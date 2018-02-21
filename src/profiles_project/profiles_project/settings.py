@@ -26,6 +26,8 @@ SECRET_KEY = '#*dq6k&pvjhk+ex8++ek&3n4uk9t!6*@^j7^l^#pq2j(ez@exa'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
     'ec2-13-125-176-117.ap-northeast-2.compute.amazonaws.com'
 ]
 
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'rest_framework_swagger',
     'profiles_api',
 ]
 

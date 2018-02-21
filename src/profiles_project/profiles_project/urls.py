@@ -17,7 +17,12 @@ from django.conf.urls import url
 from django.conf.urls import include
 from django.contrib import admin
 
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view = get_swagger_view(title='Profiles Rest API')
+
 urlpatterns = [
+    url(r'^doc/', schema_view),
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('profiles_api.urls')),
 ]
